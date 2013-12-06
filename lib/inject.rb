@@ -10,21 +10,3 @@
   end
 
 end
-
-
-
-
-
-
-
-
-
-# memo = self.first
-    
-#     self.each_with_index do |element, index|
-      
-#       yield(element)
-      
-#       return memo if index+1 == self.length
-      
-#       memo = yield memo, self[index+1]
