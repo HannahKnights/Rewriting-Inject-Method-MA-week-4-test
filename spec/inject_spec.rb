@@ -25,5 +25,10 @@ describe Array do
     expect(array.injection {|sum, num| sum * num}).to eq(24)
   end
 
+  it "should be able to do multiplication with a 0 argument" do
+    array = [2,3,4]
+    expect(array.injection(0) {|sum, num| sum * num}).to eq(0)
+  end
+
 end
  
