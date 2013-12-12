@@ -30,5 +30,11 @@ describe Array do
     expect(array.injection(0) {|sum, num| sum * num}).to eq(0)
   end
 
+  it "should not modify the original array" do
+    array = [2,3,4]
+    array.injection {|sum, num| sum * num}
+    expect(array).to eq([2,3,4]) # :)
+  end
+
 end
  
