@@ -1,7 +1,7 @@
 class Array
-  def injection(initial_value = 0)
-    value = initial_value == 0 ? self.first : initial_value
-    self.shift if initial_value == 0
+  def injection(initial_value = nil)
+    value = initial_value == nil ? self.first : initial_value
+    self.shift if initial_value == nil
     self.each do |element|
       value = yield(value, element)
     end
